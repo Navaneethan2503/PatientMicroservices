@@ -1,0 +1,12 @@
+Patient Management :
+
+- Patient Entity
+    Id , FirstName ,LastName, Occupation , Gender, Age , PhoneNo , Address , DateOfBirth , EmailId, UserName .
+
+-Appointment Entity 
+    AppointmentId , PatientId, DoctorId, Department Name, Date
+
+- End Points 
+•	POST:  /Create_Appointment ( Input : Patient_Id, Doctor_Id , Date_Time   | Output : Appointment_Id)
+•	DELETE : /Delete_Appointment ( Input: Appointment_Id | Output : Status )
+•	PUT: /Reshedule_Appointment (Input: Appointment_ID ,Date_Time | Output : Appointment_Status )
