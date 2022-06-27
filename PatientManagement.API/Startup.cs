@@ -33,20 +33,13 @@ namespace PatientManagement.API
             var connectionString = Configuration.GetConnectionString("DefaultConnectionString");
             services.AddControllers();
             services.AddDbContext<PatientManagementContext>(options => options.UseSqlServer(connectionString));
-            services.AddScoped<IRepository<Patient>, Repository<Patient>>();
+            services.AddScoped<IRepository<Appointment>, Repository<Appointment>>();
             services.AddSwaggerGen(options =>
             {
                 options.SwaggerDoc("v1", new OpenApiInfo()
                 {
                     Title = "Patient Management API",
-                    Description = "Allows working with patient information in database",
-                    TermsOfService = new Uri("http://www.cognizant.com"),
-                    Contact = new OpenApiContact()
-                    {
-                        Name = "Navaneethan.S",
-                        Email = "S,Navaneethan@outlook.com",
-                        Url = new Uri("https://github.com/nickilsekar2000")
-                    }
+                    Description = "In This Api , There are Endpoints for appointment Booking , Resheduling , Deleting and getting appointments .",
                 });
             });
 

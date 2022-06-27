@@ -11,6 +11,7 @@ namespace PatientManagement.Infrastructure.Data.Config
     {
         public void Configure(EntityTypeBuilder<Patient> builder)
         {
+            builder.HasKey(m => m.Id);
             builder.Property(m => m.FirstName).HasMaxLength(30).IsRequired(true);
             builder.Property(m => m.LastName).HasMaxLength(30).IsRequired(true);
             builder.Property(m => m.PhoneNumber).HasMaxLength(10).IsRequired(true);

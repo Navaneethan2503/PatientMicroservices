@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PatientManagement.Infrastructure.Data.Contexts;
 
-namespace PatientManagement.Infrastructure.Data
+namespace PatientManagement.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(PatientManagementContext))]
     partial class PatientManagementContextModelSnapshot : ModelSnapshot
@@ -37,7 +37,8 @@ namespace PatientManagement.Infrastructure.Data
                     b.Property<int>("DoctorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.HasKey("Id");

@@ -8,7 +8,8 @@ namespace PatientManagement.API.DTOs
 {
     public class AppointmentDTO
     {
-        
+        [Key]
+        public int Id { get; set; }
         public int PatientId { get; set; }
         public int DoctorId { get; set; }
 

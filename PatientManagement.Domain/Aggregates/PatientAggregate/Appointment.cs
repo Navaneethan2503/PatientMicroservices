@@ -20,7 +20,7 @@ namespace PatientManagement.Domain.Aggregates.PatientAggregate
             this.DateOfAppointment = dateOfAppointment;
         }
 
-        private Appointment() { }
+        protected Appointment() { }
 
         public void ChangeAppointment(DateTime dateTime)
         {
