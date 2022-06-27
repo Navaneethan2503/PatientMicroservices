@@ -23,6 +23,7 @@ namespace PatientManagement.Infrastructure.Repositories
 
         public T Add(T item)
         {
+            
             return context.Add(item).Entity;
         }
 
@@ -32,7 +33,7 @@ namespace PatientManagement.Infrastructure.Repositories
             return Data.AsReadOnly();
         }
 
-        public T GetById(long id)
+        public T GetById(int id)
         {
             return context.Set<T>().Find(id);
         }

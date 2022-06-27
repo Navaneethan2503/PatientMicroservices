@@ -14,7 +14,7 @@ namespace PatientManagement.Domain.Interfaces
         T Remove(T item);
         T Update(T item);
         IReadOnlyCollection<T> Get();
-        T GetById(long id);
+        T GetById(int id);
         IReadOnlyCollection<T> GetBySpec(SpecificationBase<T> spec);
         Task<int> SaveAsync();
     }

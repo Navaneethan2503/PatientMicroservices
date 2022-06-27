@@ -7,11 +7,11 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using PatientManagement.Infrastructure.Data.Contexts;
 
-namespace PatientManagement.Infrastructure.Data
+namespace PatientManagement.Infrastructure.Data.Migrations
 {
     [DbContext(typeof(PatientManagementContext))]
-    [Migration("20220624112217_InitialSetup")]
-    partial class InitialSetup
+    [Migration("20220627045814_InitialModel")]
+    partial class InitialModel
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -39,7 +39,8 @@ namespace PatientManagement.Infrastructure.Data
                     b.Property<int>("DoctorId")
                         .HasColumnType("int");
 
-                    b.Property<int>("PatientId")
+                    b.Property<int?>("PatientId")
+                        .IsRequired()
                         .HasColumnType("int");
 
                     b.HasKey("Id");

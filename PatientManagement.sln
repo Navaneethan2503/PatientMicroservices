@@ -3,15 +3,20 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.32428.217
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagement.Domain", "PatientManagement.Domain\PatientManagement.Domain.csproj", "{14FE08E7-FFB5-4D0B-9EDC-021934A2DE29}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagement.Domain", "PatientManagement.Domain\PatientManagement.Domain.csproj", "{14FE08E7-FFB5-4D0B-9EDC-021934A2DE29}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scr", "scr", "{DCBE149B-6D8A-42EF-B47D-860677CFEE64}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{E37C4D32-6CD7-4F63-BD0E-0BBAAC858738}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagement.Infrastructure", "PatientManagement.Infrastructure\PatientManagement.Infrastructure.csproj", "{3E3F1557-7530-4CF4-BC7B-93805E54D0E6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagement.Infrastructure", "PatientManagement.Infrastructure\PatientManagement.Infrastructure.csproj", "{3E3F1557-7530-4CF4-BC7B-93805E54D0E6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PatientManagement.API", "PatientManagement.API\PatientManagement.API.csproj", "{D1143D80-A588-4E7A-8035-3A86C21E7D14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PatientManagement.API", "PatientManagement.API\PatientManagement.API.csproj", "{D1143D80-A588-4E7A-8035-3A86C21E7D14}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{720F4E74-407F-4BD5-9F7B-E51E80BAB4F8}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

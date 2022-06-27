@@ -11,6 +11,9 @@ namespace PatientManagement.Infrastructure.Data.Config
     {
         public void Configure(EntityTypeBuilder<Appointment> builder)
         {
+            builder.HasKey(m => m.Id);
+            builder.Property(m => m.PatientId).IsRequired(true);
+            builder.Property(m => m.DoctorId).IsRequired(true);
             builder.Property(m => m.DateOfAppointment).IsRequired(true);
             builder.Property(m => m.DepartmentName).HasMaxLength(30).IsRequired();
         }
