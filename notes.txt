@@ -10,3 +10,6 @@ Patient Management :
 •	POST:  /Create_Appointment ( Input : Patient_Id, Doctor_Id , Date_Time   | Output : Appointment_Id)
 •	DELETE : /Delete_Appointment ( Input: Appointment_Id | Output : Status )
 •	PUT: /Reshedule_Appointment (Input: Appointment_ID ,Date_Time | Output : Appointment_Status )
+
+
+add-migration "InitialModel" -p PatientManagement.Infrastructure -s PatientManagement.API -outputdir Data

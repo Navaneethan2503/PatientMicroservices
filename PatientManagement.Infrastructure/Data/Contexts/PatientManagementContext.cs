@@ -8,10 +8,10 @@ namespace PatientManagement.Infrastructure.Data.Contexts
 {
     public class PatientManagementContext : DbContext
     {
+
         public PatientManagementContext( DbContextOptions options) : base(options)
         {
         }
-        public DbSet<Patient> Patients { get; set; }
         public DbSet<Appointment> Appointments { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
