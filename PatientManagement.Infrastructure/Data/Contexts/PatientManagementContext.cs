@@ -8,6 +8,7 @@ namespace PatientManagement.Infrastructure.Data.Contexts
 {
     public class PatientManagementContext : DbContext
     {
+
         public PatientManagementContext( DbContextOptions options) : base(options)
         {
         }
